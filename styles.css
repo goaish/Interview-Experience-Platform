@@ -1,0 +1,157 @@
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    135deg,
+    #2b5876 0%,
+    #4e4376 100%
+  ); /* Rich teal to deep purple gradient */
+  color: #ffffff;
+}
+
+h2,
+h3,
+h4 {
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #f1c40f; /* Gold color for links */
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f1c40f; /* Gold border for the navbar */
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.navbar nav ul {
+  display: flex;
+}
+
+.navbar nav ul li {
+  margin-left: 20px;
+}
+
+.navbar nav ul li a {
+  font-size: 18px;
+  color: #f1c40f; /* Gold color for nav links */
+  font-weight: bold;
+}
+
+.navbar nav ul li a:hover {
+  color: #16a085; /* Teal hover effect */
+}
+
+/* Submit Form */
+.submit-form {
+  background-color: rgba(255, 255, 255, 0.1); /* Light transparent white */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  border: 1px solid #f1c40f; /* Gold border around the form */
+}
+
+.submit-form label {
+  display: block;
+  margin: 10px 0;
+  color: #f1c40f; /* Gold color for labels */
+}
+
+.submit-form input,
+.submit-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 2px solid #f1c40f; /* Gold border for input fields */
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.2); /* Light white background */
+  color: #ffffff;
+}
+
+.submit-form button {
+  padding: 10px 20px;
+  background-color: #16a085; /* Teal button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-form button:hover {
+  background-color: #f1c40f; /* Gold hover effect for buttons */
+}
+
+/* Dashboard */
+.dashboard {
+  padding: 20px;
+  margin: 20px;
+}
+
+.submission-card {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Transparent background for cards */
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #f1c40f; /* Gold border for cards */
+}
+
+.submission-card h4 {
+  color: #16a085; /* Teal color for card titles */
+}
+
+.submission-card button {
+  background-color: #f1c40f; /* Gold color for card buttons */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submission-card button:hover {
+  background-color: #16a085; /* Teal hover effect for card buttons */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar nav ul li {
+    margin: 10px 0;
+  }
+
+  .submit-form,
+  .dashboard {
+    margin: 10px;
+  }
+
+  .submission-card {
+    padding: 10px;
+  }
+}
